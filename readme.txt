@@ -1,6 +1,3 @@
-Thanks for downloading this theme!
+A blood donation platform.
 
-Theme Name: WeBuild
-Theme URL: https://bootstrapmade.com/free-bootstrap-coming-soon-template-countdwon/
-Author: BootstrapMade
-Author URL: https://bootstrapmade.com
+Built with love in Nigeria.
