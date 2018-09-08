@@ -1,118 +1,591 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>bloodbank.ng - Donate to save a life today</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+        <!-- main css -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+    </head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+           	<div class="top_menu row m0">
+           		<div class="container">
+					<div class="float-left">
+						<ul class="list header_social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-behance"></i></a></li> -->
+						</ul>
+					</div>
+					<div class="float-right">
+						
+						<a class="ac_btn" href="#">My Account</a>
+						<a class="dn_btn" href="#">Donate Now</a>
+					</div>
+           		</div>	
+           	</div>	
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<!-- <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a> -->
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bloodbank.ng is a Blood donation platform for nigerians">
+                        <a class="navbar-brand logo_h" href="#">bloodbank.ng</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="#">Home</a></li> 
+								
+								<li class="nav-item"><a class="nav-link" href="#impact">Our impact</a></li> 
+								 
+								<li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About us</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="#">Team</a></li>
+										<li class="nav-item"><a class="nav-link" href="#">Vision</a></li>
+									</ul>
+								</li> 
+								<!-- <li class="nav-item submenu dropdown">
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<ul class="dropdown-menu">
+										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
+									</ul>
+								</li>  -->
 
-  <title>Bloodbank.ng - Donate today to save a life.</title>
-
-  <!-- Bootstrap -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
-  <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-  <link href="assets/css/font-awesome.css" rel="stylesheet">
-
-  <!-- siimple style -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: WeBuild
-    Theme URL: https://bootstrapmade.com/free-bootstrap-coming-soon-template-countdwon/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
-</head>
-
-<body>
-
-  <div id="wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>bloodbank.ng</h1>
-          <h2 class="subtitle">We are working...</h2>
-          <div id="countdown"></div>
-          <form class="form-inline signup" role="form">
-            <div class="form-group">
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email address">
+								<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
             </div>
-            <button type="submit" class="btn btn-theme">Get notified!</button>
-          </form>
-
-          <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          </div>
-        </div>
-      </div>
-
-     <!--  <div class="row contctform">
-        <div class="col-md-8 col-md-offset-2">
-          <h3>Contact Us</h3>
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-        </div>
-        <form action="" method="post" role="form" class="contactForm">
-          <div class="col-md-4 col-md-offset-2">
-            <div class="form">
-              <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h5>Faster, Cheaper, Safer and more reliable way of delivering blood products accross africa at hospital level.</h5>
+						<h3>Togerther, we do save lives</h3>
+						<p>Our community-based blood center provides blood and services through out Northern and Central nigeria and beyond  <br /> wherever and whenever the need. When you support BloodBank, yes, you do save lives.</p>
+						<a class="main_btn" href="#">Donate Now</a>
+						<a class="white_btn" href="#">View Activity</a>
+					</div>
+				</div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form">
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
-              </div>
-              <div class="text-center"><button type="submit" class="btn btn-theme">Send Message</button></div>
+            <div class="donation_area">
+				<div class="container">
+					<div class="row donation_inner">
+						<div class="col-lg-4">
+							<div class="dontation_item yellow">
+								<div class="media">
+									<div class="media-body">
+										<h4>Total Donation</h4>
+										<p>Through our community, We have successfully delivered up to 2,000 units of blood accross Nigeria.</p>
+									</div>
+									<div class="d-flex">
+										<h3>2,000</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="dontation_item pink">
+								<div class="media">
+									<div class="media-body">
+										<h4>Total Volunteers</h4>
+										<p>Our blood bank community continues to grow daily as people realize the need to donate.</p>
+									</div>
+									<div class="d-flex">
+										<h3>392</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="dontation_item green">
+								<div class="media">
+									<div class="media-body">
+										<h4>Diagnostic Centers</h4>
+										<p>We are only able to achieve this through partnership with diagnostic centers accross Africa. </p>
+									</div>
+									<div class="d-flex">
+										<h3>56</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-          </div>
-        </form>
- -->
-      </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>Why BloodBank? </h4>
+        					<p><i class="lnr lnr-star"></i> Our nation requires <b>4 million</b> units of blood while only <b>40 thousand</b> units are available. <br/>
 
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <p class="copyright">&copy; bloodbank.ng - All Rights Reserved</p>
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact. 
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=WeBuild
-            -->
-            Donate today to save a life
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery.countdown.min.js"></script>
-  <script type="text/javascript">
-    $('#countdown').countdown('2018/09/20', function(event) {
-      $(this).html(event.strftime('%w weeks %d days <br /> %H:%M:%S'));
-    });
-  </script>
+                            <i class="lnr lnr-star"></i> Every two minutes someone needs blood. <br/>
+                            <i class="lnr lnr-star"></i> There is no subtitute for human blood. It cannot be manufactured. <br/>
+                            <i class="lnr lnr-star"></i> There is a scarcity of regular donors accross Nigeria. </p>
+        					<div class="row">
+        						<div class="col-sm-4">
+        							<div class="wel_item center" centered>
+        								<i class="lnr lnr-database"></i>
+        								<h4>4 Million</h4>
+        								<p>Required units </p>
+        							</div>
+        						</div>
+        						<div class="col-sm-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>40,000</h4>
+        								<p>Available units</p>
+        							</div>
+        						</div>
+        						<!-- <div class="col-sm-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>190 Million</h4>
+        								<p>Individuals</p>
+        							</div>
+        						</div> -->
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="welcome_img">
+        					<img class="img-fluid" src="img/welcome-img.jpg" alt="">
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================Causes Area =================-->
+        <section class="causes_area p_120" id="impact">
+        	<div class="container" >
+        		<div class="main_title">
+        			<h2>Our Impact</h2>
+        			<p>We believe that no Nigerian should die from a shortage of blood and blood products at the hospital level and we are on a mission to solve it.</p>
+        		</div>
+        		<div class="causes_slider owl-carousel">
+        			<div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-1.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>15 lives saved in Abuja</h4>
+        						<p>Our active Abuja bloodbank community is constantly growing and new diagnostic centers are actively in demand. </p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Saved: 15</a>
+								<a href="#">Our Goal: 100,000</a>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-2.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>4 Saved in Lagos</h4>
+        						<p>Our new lagos blood bank community is organizing sensitization programmes on blood donations. </p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Saved: 5</a>
+								<a href="#">Our Goal: 200,000</a>
+							</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-3.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>10 lives saved in Jos</h4>
+        						<p>The jos community is growing and there is increased activity. More diagnostic centers coming up.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Saved: 10</a>
+								<a href="#">Our Goal: 10,000</a>
+							</div>
+        				</div>
+        			</div>
 
-  <!-- <script src="contactform/contactform.js"></script> -->
-
-</body>
-
+                   
+                        </div>
+                  
+        			<!-- <div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-1.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>Did not find your Package</h4>
+        						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace that’s why it’s crucial.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Raised: $50,689</a>
+								<a href="#">Total Need: $500k</a>
+							</div>
+        				</div>
+        			</div> -->
+        			<!-- <div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-2.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>Did not find your Package</h4>
+        						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace that’s why it’s crucial.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Raised: $50,689</a>
+								<a href="#">Total Need: $500k</a>
+							</div>
+        				</div>
+        			</div> -->
+        			<!-- <div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-3.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>Did not find your Package</h4>
+        						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace that’s why it’s crucial.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Raised: $50,689</a>
+								<a href="#">Total Need: $500k</a>
+							</div>
+        				</div>
+        			</div> -->
+        			<!-- <div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-1.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>Did not find your Package</h4>
+        						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace that’s why it’s crucial.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Raised: $50,689</a>
+								<a href="#">Total Need: $500k</a>
+							</div>
+        				</div>
+        			</div> -->
+        			<!-- <div class="item">
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="img/blog/causes/causes-2.jpg" alt="">
+        						<div class="c_parcent">
+        							<span></span>
+        						</div>
+        					</div>
+        					<div class="causes_text">
+        						<h4>Did not find your Package</h4>
+        						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace that’s why it’s crucial.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Raised: $50,689</a>
+								<a href="#">Total Need: $500k</a>
+							</div>
+        				</div>
+        			</div> -->
+        		
+        		</div>
+        	</div>
+        </section>
+        <!--================End Causes Area =================-->
+        
+        <!--================Feature Area =================-->
+        <section class="feature_area p_120">
+        	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="container">
+        		<div class="white_title">
+        			<h2>Our Core Strength</h2>
+        			<p>We deliver safe blood whereever and whenever needed in the fastest possible time.</p>
+        		</div>
+        		<div class="row feature_inner">
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-diamond"></i>
+        					<h4>Faster</h4>
+        					<p>With bloodbank.ng, getting blood and blood products is only a few minutes away.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-coffee-cup"></i>
+        					<h4>Safer</h4>
+        					<p>Through partnerships with our diagnostic centers, we ensure the safety of all blood donated.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-wheelchair"></i>
+        					<h4>Reliable</h4>
+        					<p>Blood and blood products are available within minutes of request at hospital level.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Feature Area =================-->
+        
+        <!--================Event Area =================-->
+        <section class="event_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Upcoming Events</h2>
+        			<p>Join one of our upcoming events centered around sensitization and enlightening on the need to donate blood today and the nobility in blood donation.</p>
+        		</div>
+        		<div class="event_slider owl-carousel">
+        			<div class="item">
+        				<div class="event_item">
+        					<div class="media">
+        						<div class="d-flex">
+        							<img src="img/event/event-1.jpg" alt="">
+        						</div>
+        						<div class="media-body">
+        							<a href="#">24th February, 2019</a>
+        							<a href="event-details.html"><h4>The Noble Deed of Blood Donation</h4></a>
+        							<p>For most of us, donating blood is our pride. we will continue to do so to save lives accross Nigeria.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="item">
+        				<div class="event_item">
+        					<div class="media">
+        						<div class="d-flex">
+        							<img src="img/event/event-2.jpg" alt="">
+        						</div>
+        						<div class="media-body">
+        							<a href="#">19th April, 2019</a>
+        							<a href="event-details.html"><h4>Hospitals and Diagnostic Centers Forum</h4></a>
+        							<p>A forum for discussions around blood donation, the requirements and how it can be improved.</p>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			
+        			
+        			
+        		
+        		</div>
+        	</div>
+        </section>
+        <!--================End Event Area =================-->
+        
+        <!--================Testimonials Area =================-->
+        <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="row testimonials_inner">
+        			<div class="col-lg-4">
+        				<div class="testi_left_text">
+        					<h4>Testimonial from our Donors</h4>
+        					<p>Our donors are happier when they know their  noble deed is having high impacts accross Nigeria.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-8">
+        				<div class="testi_slider owl-carousel">
+							<div class="item">
+								<div class="testi_item">
+									<img src="img/testimonials/testi-1.png" alt="">
+									<p>I love the bloodbank community. It makes me feel for once we are united as a nation towards a common good</p>
+									<h4>Cordelia Ali</h4>
+									<h6>Donor</h6>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testi_item">
+									<img src="img/testimonials/testi-2.png" alt="">
+									<p>By donating, i was able to get free tests and i am happy my blood is helping someone live fully</p>
+									<h4>Grace James</h4>
+									<h6>Donor</h6>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testi_item">
+									<img src="img/testimonials/testi-1.png" alt="">
+									<p>We got blood products faster than ever when we used bloodbank.ng. seamless.</p>
+									<h4>ABC hospital</h4>
+									<h6>Specialist</h6>
+								</div>
+							</div>
+							
+							
+							
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Clients Logo Area =================-->
+      <!--   <section class="clients_logo_area">
+        	<div class="container">
+        		<div class="clients_slider owl-carousel">
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-1.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-2.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-3.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-4.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-5.png" alt="">
+        			</div>
+        		</div>
+        	</div>
+        </section> -->
+        <!--================End Clients Logo Area =================-->
+        
+        
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">About BloodBank Nigeria</h6>
+                            <p>We are a faster, cheaper, safer and more reliable way of delivering blood products to patients accross Nigeria.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Navigation Links</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Our Impact</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Community</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="#">Team</a></li>
+                                        
+                                    </ul>
+                                </div>										
+                            </div>							
+                        </div>
+                    </div>							
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Newsletter</h6>
+                            <p>Join our weekly health newsletter  </p>		
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>		
+                                    </div>									
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                   				
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | bloodbank.ng
+</p>
+                    <div class="col-lg-4 col-md-4 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                       
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/stellar.js"></script>
+        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+        <script src="vendors/isotope/isotope-min.js"></script>
+        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/jquery.ajaxchimp.min.js"></script>
+        <script src="js/mail-script.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
 </html>
